@@ -1,0 +1,283 @@
+@font-face {
+    font-family: myFont;
+    src: url(../ELIXIA.ttf);
+}
+@font-face {
+    font-family: myFont1;
+    src: url(../font.otf);
+}
+#particles-js{
+    height: 100vh;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #fe8002, #ff3877);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #363636;
+}
+
+.custom-shape-divider-bottom-1668688985 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1668688985 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 66px;
+}
+
+.custom-shape-divider-bottom-1668688985 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1668688985 svg {
+        width: calc(187% + 1.3px);
+        height: 66px;
+    }
+}
+
+#home {
+    background-image: linear-gradient( 68.4deg, #fc6060 -0.4%, #6836e9 90% );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 5.7rem;
+    font-family: myFont1;
+    -webkit-animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.navbar ul{
+    flex-wrap: wrap;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 0px 20px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 0.8rem;
+}
+.navbar ul li a{
+    padding-bottom: 5px ;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+.navbar a:hover{
+    color: #c8c8c8;
+}
+.logo {
+    width: 180px;
+    filter: invert(100%);
+}
+.logo1 {
+    width: 180px;
+    /* position: absolute; */
+    margin-top: 10px;
+    left: 10%;
+}
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color: #fc6060;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.title-text p::after {
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#fc6060, #fff);
+    position: absolute;
+    top: -20px;
+    left: 0%;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.title-text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+/* **************************************** */
+
+#testimonials {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonials-row {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonials-col {
+    flex-basis: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #fc606014;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.testimonials-col p {
+    font-size: 14px;
+}
+
+.testimonials-col:hover {
+    transform: translateY(-7px);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.user-info i {
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 18px;
+}
+
+.user-info small {
+    color: #fc6060;
+}
+.reveal{ 
+    position: relative; 
+    transform: translateY(150px); 
+    opacity: 0; 
+    transition: all 2s ease; 
+} 
+.reveal.active{
+     transform: translateY(0px); 
+     opacity: 1; 
+}
+@media screen and (max-width: 770px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+    .logo {
+      width: 130px;
+      filter: invert(100%);
+    }
+    .navbar ul li,.navbar ul li a{
+      font-size: 0.5rem;
+  }
+  }
+  @-webkit-keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }

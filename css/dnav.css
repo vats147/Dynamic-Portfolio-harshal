@@ -1,0 +1,130 @@
+.menu{  
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    position: sticky;
+    width: 25%;
+    background-color: #333333;
+    color: white;
+}
+.menu nav ul li {
+    width: 100%;   
+    list-style: none;
+    margin-top: 8px;
+}
+
+.menu nav ul li a {
+    font-size: 0.9rem;
+    padding: 13px 30px;
+    display:block;
+    text-decoration: none;
+    color:rgb(207 207 207);
+}
+.menu nav ul li a i{
+    padding-right: 10px;
+}
+.menu nav ul li a:hover{
+    background-color: #000;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.menu a{
+    text-decoration: none;
+}
+.box1{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+}
+.profile{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profilephoto {
+    border: 4px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out; 
+}
+.profilephoto:hover{
+    transform: scale(1.1);
+}
+.profile p {
+    font-family: myFont;
+    color: rgb(148, 148, 148);
+    font-weight: 1000;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.logo1 {
+    width: 150px;
+    margin-top: 5px;
+    left: 10%;
+    filter: invert(100%);
+}
+.btn1{
+    margin-top: 10px;
+    padding: 18px;
+    color: rgb(224, 224, 224);
+    background-color: #242424;
+    width: 100%;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn1 span{
+    padding-right: 5px;
+}
+.logout{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+.logout a{
+    color: white;
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+.logout a:hover{
+    color: rgb(148, 148, 148);
+}
+@media screen and (max-width: 1000px) {
+    .profilephoto {
+        width: 60px;
+        height: 60px;
+    }
+    .logo1 {
+        width: 80px
+    }
+    .profile p {
+        font-size: 12px;
+    }
+    .btn1{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    .menu nav ul li a {
+        font-size: 0.7rem;
+        padding: 13px 30px;
+    }
+    .logout a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 770px) {
+
+}
